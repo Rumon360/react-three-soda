@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  color: #1e1e1e;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+section {
+  @apply h-screen relative w-full flex flex-col justify-center items-center z-[2] gap-[1em];
+}
+
+h1 {
+  @apply text-center text-[8vw] font-bold leading-[100%];
+}
+
+h2 {
+  @apply text-[2.5vw] font-semibold leading-[100%];
+}
+
+p {
+  @apply text-[14px] font-medium leading-[100%];
+}
